@@ -56,9 +56,17 @@
 			</div>
 			<div class="welcome-footer">
 				<small>Actuar en el momento y lugar adecuados</small>
-				<a href="https://github.com/swapcore" target="_blank">
-					<img class="github-link" src="img\github.png"><img>
-				</a>
+				<div class="social-networks">
+					<a href="https://github.com/swapcore" target="_blank">
+						<img src="img\github.png"></img>
+					</a>
+					<a href="#" target="_blank">
+						<img src="img\facebook.png"></img>
+					</a>
+					<a href="https://mx.linkedin.com/in/oscar-el%C3%ADas-mart%C3%ADnez-hern%C3%A1ndez-a07b4b248" target="_blank">
+						<img src="img\linkedin.png"></img>
+					</a>
+				</div>
 			</div>
 		</div>
 		<?php require("totop.php");?>

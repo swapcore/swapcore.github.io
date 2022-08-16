@@ -724,6 +724,21 @@ code {
 	height: 32px;
 }
 
+/* || Redes sociales */
+
+.social-networks {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 15px 0 0 0;
+}
+
+.social-networks > a > img {
+	width: 32px;
+	height: 32px;
+	margin: 0 10px 0 10px;
+}
+
 /* || Contacto */
 
 .contact-container {
