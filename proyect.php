@@ -56,7 +56,7 @@
 					<p class="card-subtitle">¡Asi es!. Mi portafolio</p>
 					<div class="btn-group card-btn-group">
 						<a class="btn btn-sm card-btn" href="proyects/mi_portfolio.php">Detalles</a>
-						<a class="btn btn-sm card-btn" href="#">Ver codigo</a>
+						<a class="btn btn-sm card-btn" href="https://github.com/swapcore/Mi-portafolio" target="_blank">Ver codigo</a>
 					</div>
 				</div>
 			</div>

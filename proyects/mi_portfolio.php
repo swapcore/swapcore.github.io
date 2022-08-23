@@ -37,7 +37,7 @@
 			<div class="container-text">
 				<div class="proyect-page-head">
 					<h2>Mí portafolio</h2>
-					<a class="btn" href="#">Ver codigo fuente</a>
+					<a class="btn" href="https://github.com/swapcore/Mi-portafolio" target="_blank">Ver codigo fuente</a>
 				</div>
 				<p>
 				Pocos días después de cumplir 27 años considere que era hora de realizar un cambio en mí vida. 
