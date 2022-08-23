@@ -49,7 +49,7 @@
 						</p>
 					</div>
 					<div class="btn-group welcome-info-btn-group">
-						<a class="btn" href="contact.php">Contactamé</a>
+						<a class="btn" style="margin-left: 0;" href="contact.php">Contactamé</a>
 						<a class="btn" href="recruiter.php">Información para el reclutador</a>
 					</div>
 				</div>
