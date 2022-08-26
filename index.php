@@ -60,7 +60,7 @@
 					<a href="https://github.com/swapcore" target="_blank">
 						<img src="img\github.png"></img>
 					</a>
-					<a href="#" target="_blank">
+					<a href="https://www.facebook.com/Swapcore-112851708200322" target="_blank">
 						<img src="img\facebook.png"></img>
 					</a>
 					<a href="https://mx.linkedin.com/in/oscar-el%C3%ADas-mart%C3%ADnez-hern%C3%A1ndez-a07b4b248" target="_blank">
