@@ -23,6 +23,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Contacto | Swapcore</title>
 		<link rel="icon" type="image/png" href="img\favicon.png">
@@ -38,25 +39,35 @@
 			</div>
 			<div class="contact-container">
 				<form class="contact" action="contact.php" method="post">
+					<input class="textbox" placeholder="Nombre" type="text" name="name"></input>
 					<input class="textbox" placeholder="E-Mail" type="text" name="email"></input>
 					<input class="textbox" placeholder="Asunto" type="text" name="subject"></input>
 					<textarea class="textbox"  placeholder="Mensaje" name="message" rows="10"></textarea>
 <?php
 	const SEND_MAIL_OK = 0;
-	const ERROR_NO_EMAIL = 1;
-	const ERROR_NO_SUBJECT = 2;
-	const ERROR_NO_MESSAGE = 4;
-	const SEND_MAIL_ERROR = 8;
+	const ERROR_NO_NAME = 1;
+	const ERROR_NO_EMAIL = 2;
+	const ERROR_INVALID_EMAIL = 4;
+	const ERROR_NO_SUBJECT = 8;
+	const ERROR_NO_MESSAGE = 16;
+	const SEND_MAIL_ERROR = 32;
 	
 	// enviar correo
 	function SendMail()
 	{		
 		$message;
+		$headers;
 		$flag=0;
 
 		// verificando datos de formulario
+		if(empty($_POST['name'])) {
+			$flag |= ERROR_NO_NAME;
+		}
 		if(empty($_POST['email'])) {
 			$flag |= ERROR_NO_EMAIL;
+		}
+		if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)===false) {
+			$flag |= ERROR_INVALID_EMAIL;
 		}
 		if(empty($_POST['subject'])) {
 			$flag |= ERROR_NO_SUBJECT;
@@ -70,12 +81,18 @@
 			return $flag;
 		}
 		
+		// preparar cabeceras
+		$headers  = 'From: '.$_POST['name'].'<'.$_POST['email'].'>\r\n';
+		$headers .= 'To: Oscar Elías <mepple_505@hotmail.com>\r\n';
+		$headers .= 'Reply-To: '.$_POST['email'].'\r\n';
+		$headers .= 'Content-Type: text/html; charset="UTF-8"\r\n';
+
 		// preparar mensaje
-		$message=wordwrap($_POST['message'],70,"\r\n");
+		$message = wordwrap($_POST['message'],70,"\r\n");
 
 		//enviar correo
 		$issendmail=mail('mepple_505@hotmail.com',
-			$_POST['subject'],$message);
+			$_POST['subject'],$message,$headers);
 		
 		if(!$issendmail) {
 			return SEND_MAIL_ERROR;
@@ -100,9 +117,15 @@
 			$msg = 'Error al envia el mensaje';
 			echo '<script>alert("'.$msg.'")</script>';
 			echo '<small>* '.$msg.'</small>';
+		}
+		if($flag & ERROR_NO_NAME) {
+			echo '<small>* Escriba su Nombre</small>';
 		}		
 		if($flag & ERROR_NO_EMAIL) {
 			echo '<small>* Escriba su E-Mail</small>';
+		}
+		if($flag & ERROR_INVALID_EMAIL) {
+			echo '<small>* E-Mail invalido</small>';
 		}
 		if($flag & ERROR_NO_SUBJECT) {
 			echo '<small>* Escriba el asunto</small>';
