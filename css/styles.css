@@ -594,13 +594,13 @@ code {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin: 0 0 48px 0px;
+	margin: 0 0 36px 0px;
 	box-sizing: border-box;
 }
 
 .welcome-holder-logo {
 	height: 80px;
-	padding: 0 15px 0 0px;
+	padding: 0 30px 0 0px;
 	box-sizing: border-box;
 }
 

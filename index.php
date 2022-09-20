@@ -36,7 +36,7 @@
 				<img class="welcome-photo" src="img/photo.png"></img>
 				<div class="welcome-info">
 					<div class="welcome-holder">
-						<img class="welcome-holder-logo" src="img/logo.png"></img>
+						<img class="welcome-holder-logo" src="img/main.png"></img>
 						<div class="welcome-holder-text">
 							<p class="welcome-holder-name">Swapcore</p>
 						</div>
