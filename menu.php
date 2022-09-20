@@ -33,7 +33,7 @@
 		<a class="menu-item" href="/docs.php">DOCS</a>
 		<a class="menu-item" href="/contact.php">CONTACTO</a>
 	</div>
-	<a class="btn btn-sm btn-menu-open" href="#" id="open-menu-id">Menú</a>
+	<a class="btn btn-sm btn-menu-open" id="open-menu-id">Menú</a>
 </nav>
 <!--fin de menu-->
 
@@ -46,7 +46,7 @@
 			</a>
 			<p class="menu-holder-name">Swapcore</p>
 		</div>
-		<a class="btn btn-sm" href="#" id="close-menu-id">Salir del menú</a>
+		<a class="btn btn-sm" id="close-menu-id">Salir del menú</a>
 	</div>
 	<div class="mobile-menu-main">
 		<a class="menu-item mobile-menu-item" href="/index.php">INICIO</a>

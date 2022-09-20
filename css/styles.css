@@ -164,7 +164,7 @@ code {
 .menu-item:active
 {
 	color: #fff;
-	border: 2px solid var(--clr-bg-back);
+	border: 2px solid var(--clr-menu-back);
 	text-decoration: none;
 }
 
