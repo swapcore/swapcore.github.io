@@ -59,6 +59,17 @@
 						<a class="btn btn-sm card-btn" href="https://github.com/swapcore/Mi-portafolio" target="_blank">Ver codigo</a>
 					</div>
 				</div>
+				<div class="card">
+					<div class="card-img-container">
+						<img class="card-img" src="img/library.png"></img>
+					</div>
+					<h4 class="card-title">Ejemplos C</h4>
+					<p class="card-subtitle">Ejemplos de uso del lenguaje C</p>
+					<div class="btn-group card-btn-group">
+						<a class="btn btn-sm card-btn" href="proyects/ejemplos_c.php">Detalles</a>
+						<a class="btn btn-sm card-btn" href="https://github.com/swapcore/ejemplos-c" target="_blank">Ver codigo</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<?php require("footer.php");?>
