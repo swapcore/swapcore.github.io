@@ -48,9 +48,9 @@
 							la electrónica, arte, música, historia y la dinámica social.
 						</p>
 					</div>
-					<div class="btn-group welcome-info-btn-group">
-						<a class="btn" style="margin-left: 0;" href="\contact.php">Contactamé</a>
-						<a class="btn" href="/docs/cv.pdf">Ver Curriculum Vitae</a>
+					<div class="welcome-btn-group">
+						<a class="btn welcome-btn" href="/contact.php">Contactamé</a>
+						<a class="btn welcome-btn" href="/docs/cv.pdf">Ver Curriculum Vitae</a>
 					</div>
 				</div>
 			</div>
