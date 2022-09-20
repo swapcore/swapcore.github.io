@@ -35,6 +35,10 @@
 			<div class="header">
 				<img class="header-img" src="img/about.png"></img>
 				<h1>Conoceme</h1>
+				<div class="recruitermsg">
+					<p>¿Eres reclutador o buscador de talento?</p>
+					<a class="btn" href="/recruiter.php">Lee esto por favor</a>
+				</div>
 			</div>
 			<div class="container-text">
 				<p style="margin-top: 0;">

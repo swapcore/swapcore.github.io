@@ -450,6 +450,18 @@ code {
 	background-color: #262006;
 }
 
+/* || Mensaje para el reclutador */
+
+.recruitermsg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 30px 0 0 0;
+	padding: 20px;
+	border-radius: 6px;
+	background-color: var(--clr-bg-back);
+}
+
 /* || Tarjetas */
 
 .card-container {
